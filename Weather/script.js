@@ -21,8 +21,8 @@ const weatherIcons = {
 searchButton.addEventListener('click', () => {
     const cityName = searchInput.value;
     if (cityName) {
-        const apiKey = 'a981de64820a63ef6df7fff155e45a24';
-        const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
+        const apiKey = 'a981de64820a63ef6df7fff155e45a24'; //Add Your Api Key form OpenWeatherApp
+        const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`; 
 
         fetch(apiURL)
             .then(response => response.json())
