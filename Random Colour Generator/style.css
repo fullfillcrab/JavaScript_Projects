@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f36f5d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hex-color {
+  text-align: center;
+  font-size: 1rem;
+  animation: changecolor 3s infinite alternate;
+}
+
+@keyframes changecolor {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: blue;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.color {
+  margin-top: 300px;
+  text-align: center;
+}
+
+#hex {
+  display: block;
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.color button {
+  background: none;
+  outline: none;
+  color: black;
+  border: 3px solid black;
+  cursor: pointer;
+  font-size: 24px;
+}
